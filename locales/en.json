@@ -1,0 +1,15 @@
+{
+  "button": {
+  },
+  "feed": {
+    "status": {
+      "FED": "FED",
+      "NOT_FEED": "NOT FEED YET"
+    },
+    "type": {
+      "BREAKFAST": "BREAKFAST",
+      "DINNER": "DINNER"
+    }
+  },
+  "not-found": "Not found"
+}

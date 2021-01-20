@@ -1,0 +1,15 @@
+{
+  "button": {
+  },
+  "feed": {
+    "status": {
+      "FED": "喂过了",
+      "NOT_FEED": "还没喂"
+    },
+    "type": {
+      "BREAKFAST": "早餐",
+      "DINNER": "晚餐"
+    }
+  },
+  "not-found": "未找到页面"
+}
