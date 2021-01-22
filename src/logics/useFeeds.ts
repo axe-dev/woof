@@ -1,4 +1,5 @@
 import { formatISO, startOfToday } from 'date-fns'
+import { zonedTimeToUtc } from 'date-fns-tz'
 import { ref } from 'vue'
 import { supabase } from './useSupabase'
 
@@ -20,7 +21,7 @@ export default function useFeeds() {
       .from('feeds')
       .select()
       .eq('type', type)
-      .gt('createdAt', formatISO(startOfToday()))
+      .gt('createdAt', formatISO(zonedTimeToUtc(startOfToday(), 'Europe/Berlin')))
       .order('createdAt', { ascending: false })
       .limit(1)
 
